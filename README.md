@@ -43,13 +43,19 @@ Start the server
 
 The SPA contains a login page that allows for two types of users: normal and admin. Normal users have access to the dashboard page, while the admin can access both the admin dashboard page and the normal dashboard page.
 
+![login-screen](https://user-images.githubusercontent.com/88003292/225722119-541e0660-0919-405d-8aa6-8475ffaec5be.png)
+
 ## Dashboard Page
 
 The SPA contains a dashboard page where the user can view all the images and sort them by category. The user can assign, reassign, or delete a label on an image. The user can also view images filtered by labels.
 
+![dashboard-page](https://user-images.githubusercontent.com/88003292/225723297-6c0a8043-97d8-482d-8aeb-d8863cc0bb6b.png)
+
 ## Admin Dashboard Page
 
 The Admin Dashboard page is where the admin can create new labels. These labels are used to categorize the images mentioned above on the main dashboard page.
+
+![admin-page](https://user-images.githubusercontent.com/88003292/225722499-8849a76b-a1be-48a2-ac74-29657982eea9.png)
 
 ## Building for production
 
