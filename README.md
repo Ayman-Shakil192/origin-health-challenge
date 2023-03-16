@@ -8,10 +8,10 @@ The link to the images can be found [here](https://drive.google.com/file/d/1sgFx
 
 The above challenge was completed with the help of
 
-1. React Bootstrap
-2. Semantic UI
-3. MDB React UI kit
-4. React Router
+1. [React Bootstrap](https://react-bootstrap.github.io/)
+2. [Semantic UI](https://react.semantic-ui.com/)
+3. [MDB React UI kit](https://mdbootstrap.com/docs/react/)
+4. [React Router](https://reactrouter.com/en/main)
 
 ## Getting Started
 
