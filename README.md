@@ -2,6 +2,8 @@
 
 This challenge is a Single Page Application (SPA) that displays a list of images from the development machine and allows the user to sort them by category. The project is built using the React Framework.
 
+The link to the images can be found [here](https://drive.google.com/file/d/1sgFxJ3q3ZqJ003U0NU3TaAp30xEGDd9q/view)
+
 ## External Libraries used
 
 The above challenge was completed with the help of
