@@ -23,17 +23,15 @@ const Login = () => {
   const handleSubmit = () => {
     const username = document.getElementById("user_name").value;
     const password = document.getElementById("pass_word").value;
-    const type = document.getElementById("user_type").value;
-    console.log(username, password, type);
 
     const user = database.find(
-      (user) => user.username === username && user.password === password
+      (user) => user?.username === username && user?.password === password
     );
 
     user.isLoggedIn = true;
 
     if (user) {
-      switch (user.type) {
+      switch (user?.type) {
         case "admin":
           navigate("/admin");
           break;

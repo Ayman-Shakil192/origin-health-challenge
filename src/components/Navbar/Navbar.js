@@ -8,7 +8,7 @@ let loggedInUser;
 
 const getLoggedInUser = () => {
   loggedInUser = database.find((user) => user.isLoggedIn === true);
-  return loggedInUser.username;
+  return loggedInUser?.username ?? "No logged in user found";
 };
 
 const Navbar = () => {
