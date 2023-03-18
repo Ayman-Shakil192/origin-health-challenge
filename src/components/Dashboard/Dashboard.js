@@ -13,10 +13,17 @@ const Dashboard = ({ filterOptions }) => {
     left: "72.7%",
   };
 
-  const handleLabelChange = (event, index) => {
-    const newImages = [...img];
-    newImages[index].label = event.target.value;
-    setImg(newImages);
+  const handleLabelChange = (index) => {
+    const updatedImages = [...img];
+    const inputField = document.getElementsByTagName("input")[index];
+    const userInputLabel = inputField.value.trim();
+    if (!userInputLabel) {
+      alert("No label assigned");
+      return;
+    }
+    updatedImages[index] = { ...updatedImages[index], label: userInputLabel };
+    inputField.value = "";
+    setImg(updatedImages);
   };
 
   const handleDelete = (index) => {
@@ -53,10 +60,20 @@ const Dashboard = ({ filterOptions }) => {
             <img src={image.path} alt="image" />
             <p>{image.label}</p>
             <div className="action">
-              <Input
-                placeholder="Assign label"
-                onChange={(e) => handleLabelChange(e, index)}
-              />
+              <div className="assign">
+                <Input
+                  placeholder="Assign label"
+                  style={{ width: 125, height: 35, marginTop: 10 }}
+                />
+                <Button
+                  basic
+                  color="blue"
+                  style={{ marginTop: 10 }}
+                  onClick={() => handleLabelChange(index)}
+                >
+                  Assign
+                </Button>
+              </div>
               <Button
                 basic
                 color="red"
